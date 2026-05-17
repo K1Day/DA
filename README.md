@@ -205,11 +205,6 @@ A square root transformation was applied to the target variable (`MedHouseVal`) 
 <img width="505" height="510" alt="image" src="https://github.com/user-attachments/assets/474701f9-825e-4e94-995b-a7e8ebd41438" />
 <img width="572" height="453" alt="image" src="https://github.com/user-attachments/assets/95a4cf98-9d0d-41b3-ac5b-5ff43adc6ae7" />
 
-**Possible improvements:**
-- Try log transformation of the target variable instead of square root.
-- Remove outliers in the high-price segment.
-- Use non-linear models (Random Forest, Gradient Boosting) to capture complex interactions.
-
 ---
 
 ## Project Structure
