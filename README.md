@@ -40,6 +40,7 @@ Statistical hypothesis testing project analyzing exam scores of 1,000 students a
 - **Result:** Mean = 66.09, t = 2.27, **p = 0.02**  ✅ Reject H₀
 
 Students score statistically significantly above the 65-point threshold.
+<img width="1489" height="490" alt="image" src="https://github.com/user-attachments/assets/69095a6d-2f0f-46d0-b374-12324f42abdf" />
 
 ---
 
@@ -51,6 +52,7 @@ Students score statistically significantly above the 65-point threshold.
 - **Result:** Prepared = 69.7, Unprepared = 64.1, **p ≈ 0.0000**  ✅ Reject H₀
 
 The prep course provides a meaningful ~5–6 point boost.
+<img width="1489" height="490" alt="image" src="https://github.com/user-attachments/assets/efa41690-7e0a-4a18-95a7-f6826f1014bd" />
 
 ---
 
@@ -62,6 +64,8 @@ The prep course provides a meaningful ~5–6 point boost.
 - **Result:** Reading = 69.17, Writing = 68.05, diff = 1.11, **p ≈ 0.0000** ✅ Reject H₀
 
 Students read slightly but significantly better than they write.
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/ca76d9c6-6384-45a1-be2e-d5cdba2afba2" />
+
 
 ---
 
@@ -73,6 +77,7 @@ Students read slightly but significantly better than they write.
 - **Result:** Males = 22%, Females = 13%, z = 3.85, **p = 0.0001** ✅ Reject H₀
 
 Males are significantly more likely to score above 80 in math.
+<img width="1489" height="490" alt="image" src="https://github.com/user-attachments/assets/52727c5e-927a-4df5-8924-c5b091683628" />
 
 ---
 
@@ -139,6 +144,7 @@ No missing values were found in the dataset.
 - **AveRooms ↔ AveBedrms (r = 0.85)** — Strong collinearity; larger houses naturally have more bedrooms.
 - **Latitude ↔ Longitude (r = −0.92)** — Near-perfect inverse relationship reflecting California's geography.
 - **HouseAge ↔ Population (r = −0.30)** — Older neighborhoods tend to be less populated.
+<img width="490" height="510" alt="image" src="https://github.com/user-attachments/assets/bdfcbe09-fcf8-4888-b603-941f0112911e" />
 
 **Geographic patterns:**
 Price peaks appear around latitudes 34° and 37–38° (Los Angeles and San Francisco areas). The most expensive properties cluster near longitude −118° (the coast), with prices declining inland.
@@ -157,6 +163,7 @@ To address multicollinearity:
 - After the replacement, VIF for `MedInc` dropped from 2.67 → 2.04, and `bedroom_ratio` achieved a VIF of 1.87.
 
 The feature `AveBedrms` was also found statistically insignificant (p-value = 0.948) and was excluded.
+<img width="490" height="510" alt="image" src="https://github.com/user-attachments/assets/2d4536d0-b948-4eec-b8b4-6485635a63d5" />
 
 ---
 
@@ -194,6 +201,9 @@ A square root transformation was applied to the target variable (`MedHouseVal`) 
 **Limitations:**
 - **Heteroscedasticity** — The residual plot shows the model performs well on cheaper houses but significantly underestimates prices for expensive properties. Errors grow with predicted value.
 - R² of ~0.53–0.60 means roughly 40–47% of price variation remains unexplained by the linear model.
+<img width="576" height="463" alt="image" src="https://github.com/user-attachments/assets/1cc88cc2-adb0-42b7-9409-e913c0b356e5" />
+<img width="505" height="510" alt="image" src="https://github.com/user-attachments/assets/474701f9-825e-4e94-995b-a7e8ebd41438" />
+<img width="572" height="453" alt="image" src="https://github.com/user-attachments/assets/95a4cf98-9d0d-41b3-ac5b-5ff43adc6ae7" />
 
 **Possible improvements:**
 - Try log transformation of the target variable instead of square root.
